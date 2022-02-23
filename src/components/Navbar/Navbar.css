@@ -1,0 +1,18 @@
+nav {
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    height: 90px;
+    padding: 30px 25px;
+}
+
+.nav-logo {
+    margin: 0;
+}
+
+.nav-right-menu {
+    margin-right: auto;
+    color: purple;
+    font-weight: 700;
+    font-size: 22px;
+}

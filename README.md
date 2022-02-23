@@ -1,3 +1,49 @@
+# Impatiens
+Nail Art by Hilary Scott
+Created using React (MERN in the future)
+
+
+Home (landing)
+Navbar -> Home (Logo) || About || Products || Socials || Login || Sidebar
+    - Later - Shopping cart stuff
+    - Later - Login
+
+    Home -> 
+    - Landing Page with nail carousel
+    - Top Products
+    - Testimonials
+    - Social
+
+    About ->
+    - All about H-dog
+
+    Products ->
+    - Picture
+    - Nail Title
+    - Nail Description
+    - Cost
+    - Shopping Cart Icon
+    - Reviews (5 star system)
+
+    Socials ->
+    - Facebook
+    - Instagram
+    - TikTok
+    - Twitter
+
+    Login ->
+    - Admin Dashboard
+        - Products sold, bought, inventory, etc. Will think about this later.
+    - User Dashboard
+        - Contact Info, Shipping, Billing
+
+    Admin Accounts ->
+        - Products sold, bought, inventory, etc. Will think about this later.
+    User Accounts ->
+        - Contact Info, Shipping, Billing
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,5 +114,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-d
