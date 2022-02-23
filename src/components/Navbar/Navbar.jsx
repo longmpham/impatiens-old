@@ -15,6 +15,8 @@ import { Link } from "react-router-dom";
 
 import logo from '../../images/logo.png'
 
+import './Navbar.css'
+
 const Navbar = () => {
     return (
         <Box sx={{ flexGrow: 1 }}>
@@ -30,12 +32,13 @@ const Navbar = () => {
             >
                 <MenuIcon />
             </IconButton> */}
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                <Link to="/"><img src={ logo } alt="Impatiens Logo"/></Link>
+            <Button color="inherit"><Link to="/"><img src={ logo } alt="Impatiens Logo"/></Link></Button>
+            <Typography variant="h3" component="div" sx={{ flexGrow: 1 }}>
+                Impatiens
             </Typography>
-            <Button color="inherit"><Link to="about">About</Link></Button>
-            <Button color="inherit"><Link to="products">Products</Link></Button>
-            <Button color="inherit"><Link to="socials">Socials</Link></Button>
+            <Button color="inherit"><Link className="nav-menu" to="about">About</Link></Button>
+            <Button color="inherit"><Link className="nav-menu" to="products">Products</Link></Button>
+            <Button color="inherit"><Link className="nav-menu" to="socials">Socials</Link></Button>
 
             </Toolbar>
         </AppBar>
