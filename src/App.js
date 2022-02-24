@@ -11,8 +11,6 @@ import Socials from './components/Socials/Socials';
 import { ThemeProvider } from '@mui/material'
 import theme from './theme'
 
-
-
 import './App.css';
 
 function App() {

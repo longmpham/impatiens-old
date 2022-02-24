@@ -2,12 +2,13 @@ nav {
     display: flex;
     align-items: center;
     background-color: gray;
-    height: 90px;
+    height: 60px;
     padding: 30px 25px;
 }
 
 .nav-logo {
     margin: 0;
+    height: 40px;
 }
 
 .nav-right-menu {
