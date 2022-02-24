@@ -1,0 +1,87 @@
+import { Nail1,Nail2,Nail3 } from './images/images.js'
+
+const nailList = [
+    {
+        _id: 1,
+        name: 'Nail1',
+        // image: {Nail1},
+        image: require('./images/nails/nail1.png'),
+        alt: 'nail1art',
+        description: 'nail3desc',
+        cost: 12
+    },
+    {
+        _id: 2,
+        name: 'Nail2',
+        // image: {Nail2},
+        image: require('./images/nails/nail2.png'),
+        alt: 'nail2art',
+        description: 'nail3desc',
+        cost: 22,
+    },
+    {
+        _id: 3,
+        name: 'Nail3',
+        // image: {Nail3},
+        image: require('./images/nails/nail3.png'),
+        alt: 'nail3art',
+        description: 'nail3desc',
+        cost: 33,
+    },
+    {
+        _id: 1,
+        name: 'Nail1',
+        // image: {Nail1},
+        image: require('./images/nails/nail1.png'),
+        alt: 'nail1art',
+        description: 'nail3desc',
+        cost: 44,
+    },
+    {
+        _id: 2,
+        name: 'Nail2',
+        // image: {Nail2},
+        image: require('./images/nails/nail2.png'),
+        alt: 'nail2art',
+        description: 'nail3desc',
+        cost: 55,
+    },
+    {
+        _id: 3,
+        name: 'Nail3',
+        // image: {Nail3},
+        image: require('./images/nails/nail3.png'),
+        alt: 'nail3art',
+        description: 'nail3desc',
+        cost: 66,
+    },
+    {
+        _id: 1,
+        name: 'Nail1',
+        // image: {Nail1},
+        image: require('./images/nails/nail1.png'),
+        alt: 'nail1art',
+        description: 'nail3desc',
+        cost: 77,
+    },
+    {
+        _id: 2,
+        name: 'Nail2',
+        // image: {Nail2},
+        image: require('./images/nails/nail2.png'),
+        alt: 'nail2art',
+        description: 'nail3desc',
+        cost: 88,
+    },
+    {
+        _id: 3,
+        name: 'Nail3',
+        // image: {Nail3},
+        image: require('./images/nails/nail3.png'),
+        alt: 'nail3art',
+        description: 'nail3desc',
+        cost: 99,
+    },
+];
+
+export default nailList

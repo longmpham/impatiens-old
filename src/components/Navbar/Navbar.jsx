@@ -94,14 +94,9 @@ const Navbar = () => {
                 <Typography variant="h3" component="div" sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }}}>Impatiens</Typography>
 
                 {/* MENU ITEMS */}
-
-                
                 {pages.map((page) => (
                     <MenuItem key={page} sx={{display: { xs: 'none', md: 'flex' }}}>
-                        <Link className="nav-menu" to={page}>
-                            <Typography textAlign="center">{page}</Typography>
-                        </Link>
-                        
+                        <Link className="nav-menu" to={page}><Typography textAlign="center">{page}</Typography></Link>        
                     </MenuItem>
                 ))}
 
