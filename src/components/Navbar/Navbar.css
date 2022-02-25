@@ -1,3 +1,5 @@
+/* TOP NAV */
+
 nav {
     display: flex;
     align-items: center;
@@ -13,11 +15,31 @@ nav {
 
 .nav-right-menu {
     margin-right: auto;
-    color: purple;
     font-weight: 700;
     font-size: 22px;
 }
 
 .nav-menu {
     text-decoration: none;
+}
+
+/* BOTTOM NAV */
+
+.bottom-nav {
+    margin-top: 40px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.bottom-nav-logo {
+    margin: 0;
+    height: 40px;
+}
+
+.bottom-nav-left {
+
+}
+
+.bottom-nav-right {
+
 }

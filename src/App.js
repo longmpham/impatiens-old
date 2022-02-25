@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 
 import Navbar from './components/Navbar/Navbar';
+import BottomNavbar from './components/Navbar/BottomNavbar';
 import Home from './components/Home/Home';
 // import About from './components/About/About';
 import ProductList from './components/Products/ProductList';
@@ -12,6 +13,7 @@ import { ThemeProvider } from '@mui/material'
 import theme from './theme'
 
 import './App.css';
+
 
 function App() {
   return (
@@ -24,6 +26,7 @@ function App() {
           <Route path='/products' element={ <ProductList />} />
           <Route path='/socials' element={ <Socials />} />
         </Routes>
+        <BottomNavbar />
       </BrowserRouter>
     </ThemeProvider>
 

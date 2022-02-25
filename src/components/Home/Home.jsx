@@ -2,7 +2,9 @@ import React from 'react'
 import { Paper, Button } from '@mui/material';
 import Slider from "react-slick";
 
-import { Nail1,Nail2,Nail3 } from '../../images/images.js';
+import About from './About'
+
+import nailList from '../../data.js'
 
 const Home = () => {
 
@@ -16,26 +18,9 @@ const Home = () => {
         autoplay: true,
         pauseOnHover: true,
         arrows: true,
-        className: "carousel"
+        className: "carousel",
+        marginBottom: "30px",
     };
-
-    const nailList = [
-        {
-            name: 'Nail1',
-            url: require("../../images/nails/nail1.png"),
-            alt: 'nail1art'
-        },
-        {
-            name: 'Nail2',
-            url: require("../../images/nails/nail2.png"),
-            alt: 'nail2art'
-        },
-        {
-            name: 'Nail3',
-            url: require("../../images/nails/nail3.png"),
-            alt: 'nail3art'
-        },
-    ];
 
     return (
         <div>Home
@@ -43,11 +28,12 @@ const Home = () => {
                 {nailList.map((nail) => {
                     return (
                         <div>
-                            <img width="100%" src={nail.url} alt={nail.alt}/>
+                            <img width="100%" src={nail.image} alt={nail.alt}/>
                         </div>
                     )
                 })}
             </Slider>
+            <About />
         </div>
   )
 }
