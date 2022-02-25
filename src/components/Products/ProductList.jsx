@@ -17,7 +17,7 @@ const ProductList = () => {
     <Grid container spacing={3} sx={{ marginTop: "0px", marginLeft: "0px", marginRight: "23px"}}>
         {/* grab data here and push through to individual product */}
         {nailList.map(nail => (
-          <Grid item key={nail._id} xs={12} sm={6} md={4} lg={2}>
+          <Grid item key={nail._id} xs={12} sm={6} md={4} lg={3}>
             <ProductCard {...nail}/>
           </Grid>
         ))}

@@ -1,0 +1,62 @@
+.instagram-icon {
+    /* color: transparent; */
+    color: white;
+    font-size: 5em;
+    /* background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); */
+    /* background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); */
+    /* background-clip: text; */
+    /* -webkit-background-clip: text; */
+    /* box-shadow: 0 5px 8px rgba(63,81,181,0.50); */
+    background: #ff07d6;
+    background: linear-gradient(
+        250deg,
+        hsl(240deg 100% 20%) 0%,
+        hsl(289deg 100% 21%) 21%,
+        hsl(315deg 100% 27%) 30%,
+        hsl(329deg 100% 36%) 39%,
+        hsl(337deg 100% 43%) 46%,
+        hsl(357deg 91% 59%) 54%,
+        hsl(17deg 100% 59%) 61%,
+        hsl(34deg 100% 53%) 69%,
+        hsl(45deg 100% 50%) 79%,
+        hsl(55deg 100% 50%) 100%
+      );
+    border-radius: 20px;
+  }
+.facebook-icon {
+    font-size: 5em;
+    color: blue
+}
+.tiktok-icon {
+    font-size: 5em;
+    color: black
+}
+
+.socials-block-top {
+    padding-top: 60px;
+    padding-right: 0px;
+    padding-bottom: 60px;
+    padding-left: 0px;
+    text-align: center;
+}
+
+.socials-block {
+    padding-top: 60px;
+    padding-right: 0px;
+    padding-bottom: 60px;
+    padding-left: 0px;
+    text-align: center;
+    
+}
+
+.socials-icons-block {
+    padding-top: 60px;
+    padding-right: 0px;
+    padding-bottom: 60px;
+    padding-left: 0px;
+    text-align: center;
+}
+
+.socials-photo-block {
+
+}

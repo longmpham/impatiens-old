@@ -26,12 +26,8 @@ const ProductPage = () => {
     const [ index, setIndex ] = useState(0);
 
     const setImageIndex = (index) => {
-
         setIndex(index);
-
     }
-
-    console.log(selectedProduct)
 
     return (
         <Grid container>
@@ -46,7 +42,7 @@ const ProductPage = () => {
                 <Paper className="product-basic-detail" elevation={12}>
                     <Typography variant="h3">{selectedProduct.name}</Typography>
                     <Typography variant="h6">{selectedProduct.description}</Typography>
-                    <Typography variant="h3">{selectedProduct.cost}</Typography>
+                    <Typography variant="h3">${selectedProduct.cost}</Typography>
                     <div className="product-image-thumbnail-detail">
                         {selectedProduct.image.map((image, index) => (
                             <img key={index} src={image} alt="thumbnail images" onClick={ () => { setImageIndex(index) }}/>

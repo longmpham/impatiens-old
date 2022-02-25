@@ -21,7 +21,7 @@ const BottomNavbar = () => {
     const pages = ['About','Products','Socials']
 
     return (
-        <Box sx={{ flexGrow: 1 }} className="">
+        <Box sx={{ flexGrow: 1 }}>
         <AppBar position="sticky" className="bottom-nav">
             <Toolbar disableGutters>
                 <Grid container alignItems="center">

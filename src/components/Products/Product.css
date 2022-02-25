@@ -6,6 +6,9 @@
     margin-left: 20px;
     margin-top: 20px;
     margin-right: 20px;
+    justify-content: center;
+    display: flex;
+    /* flex-direction: column; */
 }
 
 .product-basic-detail {
@@ -20,25 +23,29 @@
 
 .product-image-thumbnail-detail {
     max-width: 100%;
-    max-height: 100px;
+    max-height: 80px;
     display: flex;
     margin: 10px 0;
     cursor: pointer;
 }
 
 .product-image-thumbnail-detail img {
-    width: 90px;
+    width: 80px;
     height: 100%;
     display: block;
     object-fit: cover;
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     margin-right: 5px;
-    opacity: 0.8;
+    opacity: 0.7;
     border-radius: 5px;
 }
 
-.product-image-thumbnail-detail img.active {
+.product-image-thumbnail-detail img:hover {
     opacity: 1;
-    border: 1px solid lightgreen
+    border: 3px solid lightgreen
+}
 
+.product-image-thumbnail-detail img:active {
+    opacity: 1;
+    border: 3px solid green
 }
