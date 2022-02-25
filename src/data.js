@@ -4,7 +4,11 @@ const nailList = [
     {
         _id: "1",
         name: 'Nail1',
-        image: require('./images/nails/nail1.png'),
+        image: [
+            require('./images/nails/nail1.png'),
+            require('./images/nails/nail2.png'),
+            require('./images/nails/nail3.png'),
+        ],
         alt: 'nail1art',
         description: 'nail3desc',
         cost: "12"
@@ -12,7 +16,11 @@ const nailList = [
     {
         _id: "2",
         name: 'Nail2',
-        image: require('./images/nails/nail2.png'),
+        image: [
+            require('./images/nails/nail1.png'),
+            require('./images/nails/nail2.png'),
+            require('./images/nails/nail3.png'),
+        ],
         alt: 'nail2art',
         description: 'nail3desc',
         cost: "22",
@@ -20,7 +28,11 @@ const nailList = [
     {
         _id: "3",
         name: 'Nail3',
-        image: require('./images/nails/nail3.png'),
+        image: [
+            require('./images/nails/nail1.png'),
+            require('./images/nails/nail2.png'),
+            require('./images/nails/nail3.png'),
+        ],
         alt: 'nail3art',
         description: 'nail3desc',
         cost: "33",
@@ -28,7 +40,11 @@ const nailList = [
     {
         _id: "4",
         name: 'Nail4',
-        image: require('./images/nails/nail1.png'),
+        image: [
+            require('./images/nails/nail1.png'),
+            require('./images/nails/nail2.png'),
+            require('./images/nails/nail3.png'),
+        ],
         alt: 'nail1art',
         description: 'nail3desc',
         cost: "44",
@@ -36,7 +52,11 @@ const nailList = [
     {
         _id: "5",
         name: 'Nail5',
-        image: require('./images/nails/nail2.png'),
+        image: [
+            require('./images/nails/nail1.png'),
+            require('./images/nails/nail2.png'),
+            require('./images/nails/nail3.png'),
+        ],
         alt: 'nail2art',
         description: 'I painted this with gold and silver crap on top of blue and red crap',
         cost: "55",
@@ -44,15 +64,23 @@ const nailList = [
     {
         _id: "6",
         name: 'Nail6',
-        image: require('./images/nails/nail3.png'),
+        image: [
+            require('./images/nails/nail1.png'),
+            require('./images/nails/nail2.png'),
+            require('./images/nails/nail3.png'),
+        ],
         alt: 'nail3art',
         description: 'nail3desc',
         cost: "66",
     },
     {
-        _id: 7,
+        _id: "7",
         name: 'Nail7',
-        image: require('./images/nails/nail1.png'),
+        image: [
+            require('./images/nails/nail1.png'),
+            require('./images/nails/nail2.png'),
+            require('./images/nails/nail3.png'),
+        ],
         alt: 'nail1art',
         description: 'nail3desc',
         cost: "77",
@@ -60,7 +88,11 @@ const nailList = [
     {
         _id: "8",
         name: 'Nail8',
-        image: require('./images/nails/nail2.png'),
+        image: [
+            require('./images/nails/nail1.png'),
+            require('./images/nails/nail2.png'),
+            require('./images/nails/nail3.png'),
+        ],
         alt: 'nail2art',
         description: 'I painted this with gold and silver crap on top of blue and red crap',
         cost: "88",
@@ -68,7 +100,11 @@ const nailList = [
     {
         _id: "9",
         name: 'Nail9',
-        image: require('./images/nails/nail3.png'),
+        image: [
+            require('./images/nails/nail1.png'),
+            require('./images/nails/nail2.png'),
+            require('./images/nails/nail3.png'),
+        ],
         alt: 'nail3art',
         description: 'nail3desc',
         cost: "99",

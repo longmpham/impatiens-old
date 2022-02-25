@@ -17,8 +17,7 @@ const ProductCard = ( props ) => {
   return (
     <Card sx={{ maxWidth: 345 }} key={props._id}>
       <CardActionArea component={Link} to={`/Products/${props._id}`}>
-      {/* <CardActionArea component={Link} to={"/Products/"+props._id} onClick={() => <ProductPage {...props} />}> */}
-        <CardMedia component="img" height="200" image={props.image} alt={props.alt}/>
+        <CardMedia component="img" height="200" image={props.image[0]} alt={props.alt}/>
         <CardContent>
           <Typography gutterBottom variant="h4" component="div">{props.name}</Typography>
           <Typography variant="body2" color="text.secondary">{props.description}</Typography> {/* add noWrap if you want ellipsis */}

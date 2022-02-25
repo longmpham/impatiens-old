@@ -2,13 +2,13 @@ import React from 'react'
 import Paper from '@mui/material/Paper'
 import Grid from '@mui/material/Grid'
 
-import './About.css'
+import './Home.css'
 import { Typography } from '@mui/material'
 
 import {FaCanadianMapleLeaf, FaThumbsUp } from 'react-icons/fa'
 import { GiSpotedFlower } from 'react-icons/gi'
 
-const About = () => {
+const HomeAbout = () => {
   return (
     <Grid container justifyContent="center" mt={3} spacing={2}>
       <Grid item xs={12} mb={3}>
@@ -41,4 +41,4 @@ const About = () => {
   )
 }
 
-export default About
+export default HomeAbout
