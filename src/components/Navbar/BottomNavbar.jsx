@@ -21,8 +21,8 @@ const BottomNavbar = () => {
     const pages = ['About','Products','Socials']
 
     return (
-        <Box sx={{ flexGrow: 1 }}>
-        <AppBar position="static" className="bottom-nav">
+        <Box sx={{ flexGrow: 1 }} className="min-h-screen">
+        <AppBar position="sticky" className="bottom-nav">
             <Toolbar disableGutters>
                 <Grid container alignItems="center">
                     <Grid container justifyContent="left" alignItems="center" item xs={3}>
@@ -37,7 +37,7 @@ const BottomNavbar = () => {
                     <Grid container justifyContent="right" alignItems="center" item sx={{paddingRight: '10px'}} xs={3}>
                         {/* RIGHT FOOTER ITEMS */}
                         <Grid item><CopyrightIcon /></Grid>
-                        <Grid item><Typography classNames="bottom-nav-right" variant="body">Made by Long</Typography></Grid>
+                        <Grid item><Typography className="bottom-nav-right" variant="body">Made by Long</Typography></Grid>
                     </Grid>
                 </Grid>
             </Toolbar>

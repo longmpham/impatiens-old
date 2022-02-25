@@ -14,6 +14,7 @@ import theme from './theme'
 
 import './App.css';
 
+import nailList from './data';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path='/about' exact element={ <Home />} />
           <Route path='/products' element={ <ProductList />} />
           <Route path='/socials' element={ <Socials />} />
+          {/* <Route path='/products/'{data._id} element={<ProductPage />} /> */}
         </Routes>
         <BottomNavbar />
       </BrowserRouter>

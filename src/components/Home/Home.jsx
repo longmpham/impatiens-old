@@ -10,9 +10,9 @@ const Home = () => {
 
     const sliderSettings = {
         dots: true,
-        fade: true,
+        fade: false,
         infinite: true,
-        speed: 2000,
+        speed: 3000,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
@@ -20,6 +20,10 @@ const Home = () => {
         arrows: true,
         className: "carousel",
         marginBottom: "30px",
+        cssEase: "linear",
+        autoplaySpeed: 500,
+        centerMode: true,
+        centerPadding: "400px"
     };
 
     return (
@@ -27,7 +31,7 @@ const Home = () => {
             <Slider {...sliderSettings}>
                 {nailList.map((nail) => {
                     return (
-                        <div>
+                        <div key={nail._id}>
                             <img width="100%" src={nail.image} alt={nail.alt}/>
                         </div>
                     )
