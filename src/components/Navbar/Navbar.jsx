@@ -1,8 +1,3 @@
-// rafce
-
-// Navbar -> Home (Logo) || About || Products || Socials || Login || Sidebar
-// - Later - Shopping cart stuff
-// - Later - Login
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -38,8 +33,6 @@ const Navbar = () => {
     // const handleCloseUserMenu = () => {
     //     setAnchorElUser(null);
     // };
-
-
 
     return (
         <Box sx={{ flexGrow: 1 }}>
@@ -99,11 +92,6 @@ const Navbar = () => {
                             <Link className="nav-menu" to={page}><Typography textAlign="center">{page}</Typography></Link>        
                         </MenuItem>
                     ))}
-
-                    {/* <Button color="inherit" sx={{display: { xs: 'none', md: 'flex' }}}><Link className="nav-menu" to="about">About</Link></Button>
-                    <Button color="inherit" sx={{display: { xs: 'none', md: 'flex' }}}><Link className="nav-menu" to="products">Products</Link></Button>
-                    <Button color="inherit" sx={{display: { xs: 'none', md: 'flex' }}}><Link className="nav-menu" to="socials">Socials</Link></Button> */}
-
                 </Toolbar>
             </AppBar>
         </Box>
