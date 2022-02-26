@@ -48,6 +48,9 @@ const ProductPage = () => {
                             <img key={index} src={image} alt="thumbnail images" onClick={ () => { setImageIndex(index) }}/>
                         ))}
                     </div>
+                    <IconButton component={ Link } to="/" color="primary" aria-label="Add to your Favourites"><FavoriteBorderIcon size="large"/></IconButton>
+                    <IconButton component={ Link } to="/"color="primary" aria-label="Share this product"><ShareIcon size="large"/></IconButton>
+                    <IconButton component={ Link } to="/"color="primary" aria-label="Add to shopping cart"><AddShoppingCartIcon size="large"/></IconButton>
                 </Paper>
             </Grid>
         </Grid>

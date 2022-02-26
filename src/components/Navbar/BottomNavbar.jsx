@@ -25,19 +25,17 @@ const BottomNavbar = () => {
         <AppBar position="sticky" className="bottom-nav">
             <Toolbar disableGutters>
                 <Grid container alignItems="center">
-                    <Grid container justifyContent="left" alignItems="center" item xs={3}>
+                    <Grid container justifyContent="left" alignItems="left" item xs={4}>
                         {/* LEFT FOOTER ITEMS */}
                         {/* <Grid item><CopyrightIcon /></Grid> */}
- 
                     </Grid>
-                    <Grid item xs={6} textAlign="center" alignContent="center">
+                    <Grid item xs={4} textAlign="center" alignContent="center">
                         {/* LOGO */}
                         <img src={ logo } alt="Impatiens Logo" className="bottom-nav-logo"/>
                     </Grid>
-                    <Grid container justifyContent="right" alignItems="center" item sx={{paddingRight: '10px'}} xs={3}>
+                    <Grid container justifyContent="right" alignItems="right" item sx={{paddingRight: '10px'}} xs={4}>
                         {/* RIGHT FOOTER ITEMS */}
-                        <Grid item><CopyrightIcon /></Grid>
-                        <Grid item><Typography className="bottom-nav-right" variant="body">Made by Long</Typography></Grid>
+                        <Grid item><CopyrightIcon sx={{position: 'relative', top: '8px'}} /><Typography className="bottom-nav-right" variant="body">Made by Long</Typography></Grid>
                     </Grid>
                 </Grid>
             </Toolbar>

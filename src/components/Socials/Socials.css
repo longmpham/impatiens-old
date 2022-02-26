@@ -1,12 +1,6 @@
 .instagram-icon {
-    /* color: transparent; */
     color: white;
     font-size: 5em;
-    /* background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); */
-    /* background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); */
-    /* background-clip: text; */
-    /* -webkit-background-clip: text; */
-    /* box-shadow: 0 5px 8px rgba(63,81,181,0.50); */
     background: #ff07d6;
     background: linear-gradient(
         250deg,
@@ -57,6 +51,6 @@
     text-align: center;
 }
 
-.socials-photo-block {
-
-}
+/* .socials-photo-block {
+    
+} */

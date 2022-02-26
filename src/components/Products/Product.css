@@ -49,3 +49,8 @@
     opacity: 1;
     border: 3px solid green
 }
+
+.product-image-thumbnail-detail img:focus {
+    opacity: 1;
+    border: 3px solid red
+}
