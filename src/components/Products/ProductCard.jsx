@@ -14,14 +14,17 @@ import ShareIcon from '@mui/icons-material/Share';
 
 const ProductCard = ( props ) => {
 
+  console.log(props)
+  
+
   return (
-    <Card sx={{ maxWidth: 345 }} key={props._id}>
-      <CardActionArea component={Link} to={`/Products/${props._id}`}>
-        <CardMedia component="img" height="200" image={props.image[0]} alt={props.alt}/>
+    <Card sx={{ maxWidth: 345 }} key={props.id}>
+      <CardActionArea component={Link} to={`/Products/${props.id}`}>
+        <CardMedia component="img" height="200" image={props.url} alt={props.thumbnailUrl}></CardMedia>
         <CardContent>
-          <Typography gutterBottom variant="h4" component="div">{props.name}</Typography>
-          <Typography variant="body2" color="text.secondary">{props.description}</Typography> {/* add noWrap if you want ellipsis */}
-          <Typography variant="h6" color="text.primary">${props.cost}</Typography>
+          <Typography gutterBottom variant="h4" component="div">{props.title}</Typography>
+          <Typography variant="body2" color="text.secondary">{props.description}temporary description</Typography> {/* add noWrap if you want ellipsis (descr...) */}
+          <Typography variant="h6" color="text.primary">$temporary{props.cost}</Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>

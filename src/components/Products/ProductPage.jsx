@@ -50,7 +50,7 @@ const ProductPage = () => {
                     </div>
                     <IconButton component={ Link } to="/" color="primary" aria-label="Add to your Favourites"><FavoriteBorderIcon size="large"/></IconButton>
                     <IconButton component={ Link } to="/"color="primary" aria-label="Share this product"><ShareIcon size="large"/></IconButton>
-                    <IconButton component={ Link } to="/"color="primary" aria-label="Add to shopping cart"><AddShoppingCartIcon size="large"/></IconButton>
+                    <IconButton component={ Link } to="/ShoppingCart"color="primary" aria-label="Add to shopping cart"><AddShoppingCartIcon size="large"/></IconButton>
                 </Paper>
             </Grid>
         </Grid>
