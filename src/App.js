@@ -31,7 +31,7 @@ function App() {
           <Route path='/Products' element={ <ProductList />} />
           <Route path='/Socials' element={ <Socials />} />
           <Route path='/ShoppingCart' element={ <ShoppingCart />} />
-          <Route path='/Products/:_id' element={<ProductPage />} />
+          <Route path='/Products/:id' element={<ProductPage />} />
         </Routes>
         <BottomNavbar />
       </BrowserRouter>
