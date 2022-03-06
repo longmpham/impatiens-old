@@ -17,6 +17,7 @@ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import ShareIcon from '@mui/icons-material/Share';
+import Favorite from './Favorite';
 
 
 const ProductPage = (props) => {
@@ -80,9 +81,10 @@ const ProductPage = (props) => {
                             <img key={index} src={image} alt="thumbnail images" onClick={ () => { setImageIndex(index) }}/>
                         ))}
                     </div> */}
-                    <IconButton component={ Link } to="/" color="primary" aria-label="Add to your Favourites"><FavoriteBorderIcon size="large"/></IconButton>
-                    <IconButton component={ Link } to="/"color="primary" aria-label="Share this product"><ShareIcon size="large"/></IconButton>
-                    <IconButton component={ Link } to="/ShoppingCart"color="primary" aria-label="Add to shopping cart"><AddShoppingCartIcon size="large"/></IconButton>
+                    <Favorite />
+                    {/* <IconButton component={ Link } to="/" color="primary" aria-label="Add to your Favourites"><FavoriteBorderIcon size="large"/></IconButton> */}
+                    <IconButton component={ Link } to={`/Products/${product.id}`} color="primary" aria-label="Share this product"><ShareIcon size="large"/></IconButton>
+                    <IconButton component={ Link } to="/ShoppingCart" color="primary" aria-label="Add to shopping cart"><AddShoppingCartIcon size="large"/></IconButton>
                 </Paper>
             </Grid>
         </Grid>
