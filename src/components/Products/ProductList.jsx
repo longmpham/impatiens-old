@@ -29,7 +29,7 @@ const ProductList = () => {
 
           const result = await axios.get("http://jsonplaceholder.typicode.com/albums/1/photos"); // calls from ./public folder cuz axios...
 
-          console.log(result.data);
+          // console.log(result.data);
 
           setNailList(result.data);
           setLoading(false);
@@ -41,7 +41,6 @@ const ProductList = () => {
     <Grid container spacing={3} sx={{ marginTop: "0px", marginLeft: "0px", marginRight: "0px"}} pr={5}>
         {loading ? (<h4>Loading...</h4>) :
           // grab data here and push through to individual product
-            
           nailList.map(nail => (
             <Grid item key={nail.id} xs={12} sm={6} md={4} lg={3}>
               <ProductCard {...nail}/>

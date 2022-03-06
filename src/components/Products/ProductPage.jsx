@@ -71,8 +71,8 @@ const ProductPage = (props) => {
                     <Typography variant="h3">${product.cost} TEMP #</Typography>
                     <div className="product-image-thumbnail-detail">
                     <img key={product.id} src={product.url} alt={product.thumbnailUrl} />
-                    <img key={1} src={product.url} alt={product.thumbnailUrl} />
-                    <img key={2} src={product.url} alt={product.thumbnailUrl} />
+                    <img src={product.url} alt={product.thumbnailUrl} />
+                    <img src={product.url} alt={product.thumbnailUrl} />
                     </div>
                     
                     {/* <div className="product-image-thumbnail-detail">

@@ -16,8 +16,8 @@ const About = () => {
     <Grid container justifyContent="center" mt={0} spacing={2}>
       <Grid alignContent="left" item xs={12} mb={0}>
         <Paper className="about-title" elevation={0}>
-            <Typography variant="h2">Hilary Scott</Typography>
-            <Typography variant="subtitle1">Nail Designer</Typography>
+            <Typography variant="h2" display="flex" justifyContent="center" alignItems="center">Hilary Scott</Typography>
+            <Typography variant="subtitle1" display="flex" justifyContent="center" alignItems="center">Nail Designer</Typography>
         </Paper>
       </Grid>
       <Grid container sx={{ flexGrow: 1 }} justifyContent="center" spacing={3} ml={2} mr={2}>

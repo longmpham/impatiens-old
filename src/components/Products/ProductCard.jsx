@@ -17,6 +17,12 @@ const ProductCard = ( props ) => {
   const handleSetFavourite = () => {
     setFavourite(favorite => !favorite)
   }
+  const handleShare = (event) => {
+    console.log(event)
+  }
+  const handleShoppingCart = (event) => {
+    console.log(event)
+  }
 
   return (
     <Card sx={{ maxWidth: 345 }} key={props.id}>
@@ -25,14 +31,14 @@ const ProductCard = ( props ) => {
         <CardContent>
           <Typography gutterBottom variant="h4" component="div">{props.title}</Typography>
           <Typography variant="body2" color="text.secondary">{props.description}temporary description</Typography> {/* add noWrap if you want ellipsis (descr...) */}
-          <Typography variant="h6" color="text.primary">$temporary{props.cost}</Typography>
+          <Typography variant="h6" color="text.primary">${props.id}</Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
         <Favorite />
         {/* <IconButton to="" color="primary" onClick={handleSetFavourite} aria-label="Add to your Favourites">{favorite ? <FavoriteBorderIcon /> : <FavoriteIcon />}</IconButton> */}
-        <IconButton to=""color="primary" onClick="" aria-label="Share this product"><ShareIcon /></IconButton>
-        <IconButton to=""color="primary" onClick="" aria-label="Add to shopping cart"><AddShoppingCartIcon /></IconButton>
+        <IconButton to=""color="primary" onClick={handleShare} aria-label="Share this product"><ShareIcon /></IconButton>
+        <IconButton to=""color="primary" onClick={handleShoppingCart} aria-label="Add to shopping cart"><AddShoppingCartIcon /></IconButton>
         {/* <IconButton component={ Link } to="" color="primary" onClick={handleSetFavourite} aria-label="Add to your Favourites"><FavoriteBorderIcon size="large"/></IconButton>
         <IconButton component={ Link } to=""color="primary" onClick="" aria-label="Share this product"><ShareIcon size="large"/></IconButton>
         <IconButton component={ Link } to=""color="primary" onClick="" aria-label="Add to shopping cart"><AddShoppingCartIcon size="large"/></IconButton> */}
