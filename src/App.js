@@ -16,9 +16,7 @@ import ShoppingCart from './components/ShoppingCart/ShoppingCart';
 import { ThemeProvider } from '@mui/material'
 import theme from './theme'
 
-import './App.css';
-
-import nailList from './data';
+import Signup from './components/Login/Signup';
 
 
 function App() {
@@ -32,6 +30,7 @@ function App() {
           <Route path='/Products' element={ <ProductList />} />
           <Route path='/Socials' element={ <Socials />} />
           <Route path='/Login' element={ <Login />} />
+          <Route path='/Signup' element={ <Signup />} />
           <Route path='/ShoppingCart' element={ <ShoppingCart />} />
           <Route path='/Products/:id' element={<ProductPage />} />
         </Routes>
