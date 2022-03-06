@@ -7,6 +7,7 @@ import BottomNavbar from './components/Navbar/BottomNavbar';
 import BottomNavbarFixed from './components/Navbar/BottomNavbarFixed';
 import Home from './components/Home/Home';
 import About from './components/About/About';
+import Login from './components/Login/Login';
 import ProductList from './components/Products/ProductList';
 import Socials from './components/Socials/Socials';
 import ProductPage from './components/Products/ProductPage';
@@ -30,6 +31,7 @@ function App() {
           <Route path='/About' exact element={ <About />} />
           <Route path='/Products' element={ <ProductList />} />
           <Route path='/Socials' element={ <Socials />} />
+          <Route path='/Login' element={ <Login />} />
           <Route path='/ShoppingCart' element={ <ShoppingCart />} />
           <Route path='/Products/:id' element={<ProductPage />} />
         </Routes>

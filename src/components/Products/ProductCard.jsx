@@ -5,17 +5,18 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions, IconButton } from '@mui/material';
 import { Link } from "react-router-dom";
-
+import Favorite from './Favorite'
 // Icons
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import ShareIcon from '@mui/icons-material/Share';
 
 const ProductCard = ( props ) => {
 
-  console.log(props)
-  
+  const [favorite, setFavourite] = React.useState(true);
+
+  const handleSetFavourite = () => {
+    setFavourite(favorite => !favorite)
+  }
 
   return (
     <Card sx={{ maxWidth: 345 }} key={props.id}>
@@ -28,9 +29,13 @@ const ProductCard = ( props ) => {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <IconButton component={ Link } to="/" color="primary" aria-label="Add to your Favourites"><FavoriteBorderIcon size="large"/></IconButton>
-        <IconButton component={ Link } to="/"color="primary" aria-label="Share this product"><ShareIcon size="large"/></IconButton>
-        <IconButton component={ Link } to="/"color="primary" aria-label="Add to shopping cart"><AddShoppingCartIcon size="large"/></IconButton>
+        <Favorite />
+        {/* <IconButton to="" color="primary" onClick={handleSetFavourite} aria-label="Add to your Favourites">{favorite ? <FavoriteBorderIcon /> : <FavoriteIcon />}</IconButton> */}
+        <IconButton to=""color="primary" onClick="" aria-label="Share this product"><ShareIcon /></IconButton>
+        <IconButton to=""color="primary" onClick="" aria-label="Add to shopping cart"><AddShoppingCartIcon /></IconButton>
+        {/* <IconButton component={ Link } to="" color="primary" onClick={handleSetFavourite} aria-label="Add to your Favourites"><FavoriteBorderIcon size="large"/></IconButton>
+        <IconButton component={ Link } to=""color="primary" onClick="" aria-label="Share this product"><ShareIcon size="large"/></IconButton>
+        <IconButton component={ Link } to=""color="primary" onClick="" aria-label="Add to shopping cart"><AddShoppingCartIcon size="large"/></IconButton> */}
       </CardActions>
     </Card>
   )

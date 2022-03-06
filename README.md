@@ -1,6 +1,6 @@
 # Impatiens
 Nail Art by Hilary Scott
-Created using React (MERN in the future)
+Created using React (MERN in the future) (ignore bad CSS...)
 
 
 Home (landing)

@@ -15,7 +15,7 @@ import { Menu, MenuItem } from '@mui/material';
 
 const Navbar = () => {
 
-    const pages = ['About','Products','Socials']
+    const pages = ['About','Products','Socials','Login']
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     
     const handleOpenNavMenu = (event) => {
